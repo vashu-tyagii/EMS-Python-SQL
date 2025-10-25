@@ -1,8 +1,7 @@
 # import specific mysql error classes for exception handling
-import mysql.connector
+import mysql.connector # type: ignore   # main MySQL connector library
 import datetime  # for date handling (e.g., today)
 from os import system  # to call system clear/cls for console UI
-import mysql.connector  # main MySQL connector library
 import sys  # to check platform for clearing screen
 
 conn = mysql.connector.connect(
